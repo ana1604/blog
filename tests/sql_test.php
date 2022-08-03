@@ -4,10 +4,10 @@
      $id = 1;
      $nome = 'ana';
      $email = 'anam@gmail.com';
-     $senha = '123mudar';
+     $senha = 'analinda';
      $dados = ['nome' => $nome,
                 'email' => $email,
-                'senha' => $email];
+                'senha' => $senha];
 
     $entidade = 'usuario';
     $criterio = [['id', '=', $id]];
