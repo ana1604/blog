@@ -3,7 +3,7 @@
     <head>
         <title>Usuario | Projeto para Web com PHP</title>
         <link rel="stylesheet"
-            href="lib/bootstrap-4.2.1-dist/css/bootstrap.min.css">
+             href="lib/bootstrap-4.2.1-dist/bootstrap-4.2.1-dist/css/bootstrap.min.css">
     </head>
     <body>
         <div class="container">
@@ -19,7 +19,7 @@
                 <div class="col-md-10" style="padding-top: 50px;">
                     <?php 
                         require_once 'includes/funcoes.php';
-                        require_once 'core/conexao_mysqli.php';
+                        require_once 'core/conexao_mysql.php';
                         require_once 'core/sql.php';
                         require_once 'core/mysql.php';
 
@@ -44,7 +44,7 @@
 
                     <h2>Usuario</h2>
                     <form method="post" action="core/usuario_repositorio.php">
-                        <imput type="hidden" name="acao"
+                        <input type="hidden" name="acao"
                             value="<?php echo empty($id) ? 'insert' : 'update' ?>">
                         <input type="hidden" name="id"
                             value="<?php echo $entidade['id'] ?? ''?>">

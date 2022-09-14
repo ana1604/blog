@@ -5,7 +5,7 @@
 
 <div class="card">
     <div class="card=header">
-        <h1>PROJETO BLOG EM PHP + MYSQL IFSP - BARBARA</h1>
+        <h1>PROJETO BLOG EM PHP + MYSQL IFSP - ana maria</h1>
     </div>
 
     <?php if(isset($_SESSION['login'])): ?>

@@ -2,7 +2,7 @@
     <head>
         <title>Página inicial | Projeto para Web com PHP</title>
         <link rel="stylesheet"
-              href="lib/bootstrap-4.2.1-dist/css/bootstrap.min.css">
+            href="lib/bootstrap-4.2.1-dist/bootstrap-4.2.1-dist/css/bootstrap.min.css">
     </head>
     <body>
         <div class="container">
@@ -31,7 +31,7 @@
                     ?>
                     <?php
                         require_once 'includes/funcoes.php';
-                        require_once 'core/conexao_mysqli.php';
+                        require_once 'core/conexao_mysql.php';
                         require_once 'core/sql.php';
                         require_once 'core/mysql.php';
 

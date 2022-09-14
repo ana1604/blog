@@ -7,10 +7,11 @@ function insere(string $entidade, array $dados) : bool
     foreach ($dados as $campo => $dado){
         $coringa[$campo] = '?';
         $tipo [] = gettype ($dado) [0];
-        $campo = $dado;
+        $$campo = $dado;
     }
-
+   
     $instrucao = insert($entidade, $coringa);
+    
 
     $conexao = conecta();
 
@@ -24,7 +25,7 @@ function insere(string $entidade, array $dados) : bool
     $retorno = (boolean) mysqli_stmt_affected_rows($stmt);
 
     $_SESSION['errors'] = mysqli_stmt_error_list($stmt);
-
+    print_r($_SESSION['errors']);
     mysqli_stmt_close($stmt);
 
     desconecta ($conexao);

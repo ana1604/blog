@@ -9,7 +9,7 @@ function insert (string $entidade, array $dados) : string
 
     $instrucao .= " ({$campos}) ";
     $instrucao .= " VALUES  ({$valores})";
-
+    
     return $instrucao;
 }
 
