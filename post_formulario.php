@@ -74,11 +74,19 @@
                     ?>
                     <div class="row">
                         <div class="col-md-3"> 
-                            <input class="form-control"  type="time"
+                            <input class="form-control"  type="date"
                                 require="required"
                                 id="data_postagem"
                                 name="data_postagem"
-                                value="<?php echo $hora ?>">
+                                value="<?php echo $data ?>">
+                        </div>
+                        <div class="col-md-3">
+                            <input class="form-control" type="time"
+                            require="required"
+                            id="hora_postagem"
+                            name="hora_postagem"
+                            value="<?php echo $hora?>">
+
                         </div>
                   </div>
              </div>
