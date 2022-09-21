@@ -22,7 +22,7 @@
                     <form method="post" action="core/usuario_repositorio.php"> 
                         <input type="hidden" name="acao" value="login"> 
                         <div class="form-group"> 
-                            <label for="email"> E-mail</label>
+                            <label for="email"> E-mail </label>
                             <input class="form-control" type="text"
                                 require="required" id="email" name="email"> 
                         </div>
